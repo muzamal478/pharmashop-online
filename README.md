@@ -3,7 +3,7 @@ PharmaShop: A responsive online pharmacy web application built with HTML, CSS, J
 
 # PharmaShop - Online Pharmacy Web Application
 
-![PharmaShop Preview](/images/preview.jpg) <!-- Replace with a screenshot -->
+![PharmaShop Preview](images/preview.jpeg) <!-- Replace with a screenshot -->
 
 PharmaShop is a modern, responsive web application designed as an online pharmacy platform. It allows users to browse medicines, view special offers, and contact support seamlessly. Built with HTML, CSS, JavaScript, and Bootstrap, this project showcases clean UI design, animations, and user-friendly features.
 
