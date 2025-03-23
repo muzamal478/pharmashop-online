@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaShop - Online Pharmacy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <!-- Logo Placeholder (Replace 'logo.png' with your actual logo file) -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="PharmaShop Logo" class="navbar-logo">
+                <span>PharmaShop</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Medicines</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+    <section id="hero" class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container hero-content">
+            <h1 class="display-3 animate__animated animate__fadeInDown animate__delay-1s">Welcome to PharmaShop</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-2s">Your trusted online pharmacy for all your medical needs.</p>
+            <div class="hero-buttons mt-4">
+                <a href="#products" class="btn btn-primary btn-lg animate__animated animate__zoomIn animate__delay-3s">Shop Now</a>
+                <a href="#about" class="btn btn-outline-light btn-lg animate__animated animate__zoomIn animate__delay-3s ms-3">Learn More</a>
+            </div>
+            <!-- Optional Overlay Icon or Tagline -->
+            <div class="hero-tagline mt-5 animate__animated animate__bounceIn animate__delay-4s">
+                <span>Fast. Reliable. Affordable.</span>
+            </div>
+        </div>
+        <!-- Background Overlay for Better Contrast -->
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 about-section">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown animate__delay-1s">About Us</h2>
+            <div class="row align-items-center">
+                <!-- Left: Text Content -->
+                <div class="col-md-6 animate__animated animate__fadeInLeft animate__delay-2s">
+                    <h3 class="about-title">Who We Are</h3>
+                    <p class="about-text">PharmaShop is dedicated to providing high-quality medicines at affordable prices. We ensure fast delivery and excellent customer service to meet your healthcare needs.</p>
+                    <p class="about-text">Our mission is to make healthcare accessible and reliable for everyone, with a team of experts committed to your well-being.</p>
+                    <a href="#contact" class="btn btn-outline-primary mt-3">Get in Touch</a>
+                </div>
+                <!-- Right: Image or Icon -->
+                <div class="col-md-6 text-center animate__animated animate__fadeInRight animate__delay-3s">
+                    <img src="/images/about.jpg" alt="About PharmaShop" class="about-image img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Products/Medicines Section -->
+    <section id="products" class="py-5 products-section">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown animate__delay-1s">Our Medicines</h2>
+            <div class="row" id="product-list">
+                <!-- Products will be dynamically added via JS -->
+            </div>
+            <div class="text-center mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <a href="#" class="btn btn-outline-primary btn-lg">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Offers/Discounts Section -->
+    <section id="offers" class="py-5 offers-section">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown animate__delay-1s">Special Offers</h2>
+            <div class="row g-4">
+                <div class="col-md-4 animate__animated animate__fadeInLeft animate__delay-2s">
+                    <div class="offer-card text-center">
+                        <div class="offer-icon">
+                            <i class="fas fa-percentage"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <h5 class="offer-title">20% Off</h5>
+                        <p class="offer-text">On all pain relief medicines this week!</p>
+                        <a href="#products" class="btn btn-sm btn-primary mt-2">Shop Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="offer-card text-center">
+                        <div class="offer-icon">
+                            <i class="fas fa-shipping-fast"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <h5 class="offer-title">Free Shipping</h5>
+                        <p class="offer-text">On orders above $50.</p>
+                        <a href="#products" class="btn btn-sm btn-primary mt-2">Shop Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__fadeInRight animate__delay-4s">
+                    <div class="offer-card text-center">
+                        <div class="offer-icon">
+                            <i class="fas fa-gift"></i> <!-- Font Awesome icon -->
+                        </div>
+                        <h5 class="offer-title">Buy 2, Get 1 Free</h5>
+                        <p class="offer-text">On selected vitamins.</p>
+                        <a href="#products" class="btn btn-sm btn-primary mt-2">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Us Section -->
+    <section id="contact" class="contact-section d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown animate__delay-1s">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-7">
+                    <form id="contact-form" class="contact-form animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="form-group mb-4">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Write your message here" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-3 animate__animated animate__zoomIn animate__delay-3s">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <!-- Left: Branding -->
+                <div class="col-md-4 text-center text-md-start animate__animated animate__fadeInLeft animate__delay-1s">
+                    <h5 class="footer-brand">PharmaShop</h5>
+                    <p class="footer-text mb-0">Your trusted online pharmacy.</p>
+                </div>
+                <!-- Center: Links -->
+                <div class="col-md-4 text-center animate__animated animate__fadeInUp animate__delay-2s">
+                    <p class="footer-links">
+                        <a href="#" class="text-white">Privacy Policy</a> | 
+                        <a href="#" class="text-white">Terms of Service</a> | 
+                        <a href="#contact" class="text-white">Contact Us</a>
+                    </p>
+                    <p class="footer-copyright">© 2025 PharmaShop. All Rights Reserved.</p>
+                </div>
+                <!-- Right: Social Icons -->
+                <div class="col-md-4 text-center text-md-end animate__animated animate__fadeInRight animate__delay-3s">
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
